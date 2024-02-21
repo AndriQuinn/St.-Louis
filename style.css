@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+html {
+  overflow: auto;
+}
+
+:root {
+  --blue: #325BC9;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+nav img {
+  margin:  0 10px;
+}
+
+#content #headline h1 {
+  font-family: serif;
+  font-weight: 100;
+  position: relative;
+  text-indent: 0.5rem;
+}
+
+#headline {
+  display: inline-block;
+  margin: 0 2rem 0rem 3rem;
+}
+
+#headline h1::before {
+  content: "";
+  height: 100%;
+  width: 5%;
+  top: 0;
+  left: -1rem;
+  position: absolute;
+  background: var(--blue);
+}
+
+#faction img {
+  vertical-align: middle;
+}
+
+#headline h2 {
+  font-weight: 500;
+  font-size: 12px;
+  position: relative;
+  display: inline-block;
+}
+
+#menuicon  {
+  z-index: 5;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+#menu {
+  transition: width 0.4s;
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 0;
+  height: 100vh;
+  overflow: hidden;
+  border-left: 1px solid black;
+  background: white;
+  
+}
+
+#menu a img {
+  display: block;
+  margin: 0.5rem 0 0.5rem 1rem;
+}
+
+#menu ul {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  list-style: none;
+  font-weight: 300;
+  font-family: sans-serif;
+}
+
+#menu ul li {
+  margin: 1rem;
+  border-bottom: 1px solid black;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+
+#content {
+  display: inline-block;
+  position: relative;
+}
+
+#img-content {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  
+}
+
+#img-content img {
+  width: 90%;
+  z-index: 1;
+}
+
+#img-content::after {
+  content: "";
+  height: 100%;
+  width: 110%;
+  z-index: -1;
+  background: var(--blue);
+  position: absolute;
+  top: -15%;
+  right: -56%;
+  border-radius: 100%;
+}
+
+
+
+#sidebanner {
+  position: absolute;
+  top: 180px;
+  right: -5rem;
+}
+
+#sidebanner h1 {
+  font-family: serif;
+  font-weight: 100;
+  color: white;
+  transform: rotate(90deg);
+  font-size: 45px;
+  margin-bottom: 7rem;
+}
+
+#sidebanner h2 {
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  text-indent: 1rem;
+  font-family: sans-serif;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+  margin: 5rem 3rem;
+  flex-flow: column wrap;
+}
+
+#buttons button {
+  color: white;
+  background: var(--blue);
+  border: none;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+
+#buttons #cart {
+  color: black;
+  background: none;
+  border: 3px solid var(--blue);
+  padding: 0.8rem;
+  border-radius: 2rem;
+}
+
+#cart span p {
+  display: inline-block;
+}
+
+#cart span img {
+  vertical-align: middle;
+  margin-left: 2px;
+}
+
+#info {
+  margin: 0 2rem 0rem 2rem;
+  font-family: sans-serif;
+}
+
+#info h1{
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+#info h2 {
+  font-weight: 300;
+  font-size: 16px;
+  position: relative;
+  text-indent: 1rem;
+}
+
+#info h2::before {
+  top: 0;
+  left: 0;
+  background: var(--blue);
+  width: 5%;
+  height: 100%;
+  position: absolute;
+  content: " ";
+}
+
+#info #datas {
+  margin: 2rem 0;
+  font-weight: 300;
+  font-size: 16px;
+  text-indent: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+#info #datas table {
+  border: 1px solid var(--blue);
+  margin: 5rem 0;
+}
+
+#info #datas td{
+  padding: 1rem;
+}
+
+tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+footer {
+  text-align: center;
+  background: var(--blue);
+  color: white;
+  font-weight: 300;
+  font-size: 14px;
+  padding: 1rem 0;
+  font-family: sans-serif;
+}
+
+footer a, img{
+  color: white;
+  vertical-align: middle;
+}
