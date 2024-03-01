@@ -131,12 +131,14 @@ nav img {
 #content {
   display: inline-block;
   position: relative;
+
 }
 
 #img-content {
   display: flex;
   justify-content: center;
   position: relative;
+  margin-top: 1rem;
 }
 
 #img-content img {
@@ -280,9 +282,17 @@ footer a, img{
 }
 
 @media only screen and (min-width: 750px) {
-  #header, #content, #buttons, #info {
-    padding: 0 10rem;
+  header {
+    margin: 0.2rem 7rem 2rem 7rem;
   }  
+
+  #content {
+    margin: 0 6rem;
+  }
+
+  #info {
+    margin: 0 6rem;
+  }
 }
   
 @media only screen and (min-width: 1000px) {   
@@ -290,7 +300,7 @@ footer a, img{
     
     padding: 0.2rem 1rem;
     align-items: center;
-    margin: 1rem 5rem 5rem 5rem;
+    margin: 1rem 15rem 5rem 15rem;
     font-size: 12px;
     border: 1px solid black;
     border-radius: 6rem;
@@ -352,7 +362,7 @@ footer a, img{
   }
 
   #content {
-    margin: 0 8rem; 
+    margin: 0 15rem; 
   }
 
   #img-content  {
@@ -366,4 +376,7 @@ footer a, img{
   #buttons #cart {
     padding: 0.8rem 8rem ;
   } 
-}
+  #info {
+    margin: 0 10rem;
+  }
+} 
