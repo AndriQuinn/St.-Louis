@@ -286,10 +286,6 @@ footer a, img{
 }
   
 @media only screen and (min-width: 1000px) {   
-  body  {
-    padding: 0 10rem;
-  }  
-
   header {
     
     padding: 0.2rem 1rem;
