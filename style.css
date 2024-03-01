@@ -280,7 +280,7 @@ footer a, img{
 }
 
 @media only screen and (min-width: 750px) {
-  body  {
+  #header, #content, #buttons, #info {
     padding: 0 10rem;
   }  
 }
